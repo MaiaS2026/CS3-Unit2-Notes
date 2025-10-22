@@ -35,3 +35,15 @@ print(pokemon_df.columns) # display col headers
 print(pokemon_df['Name'])
 # Shortcut using DOT OPERATOR notation
 print(pokemon_df.HP)
+print(pokemon_df['Type 1'])
+
+# Add a new column
+pokemon_df['Attack Ratio'] = pokemon_df['Attack'] / pokemon_df['Sp. Atk']
+
+# Examples of getting info about a DataFrame
+print(pokemon_df.head(10)) # shows first n rows
+print(pokemon_df.sample(3)) # show random sample of n rows
+print(pokemon_df.shape_) # returns a tiple (rows, cols)
+print(pokemon_df.columns) # returns a list of column headers
+print(pokemon_df.info()) # shows non-null count & dtypes
+print(pokemon_df.describe()) 
