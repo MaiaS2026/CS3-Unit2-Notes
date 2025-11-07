@@ -87,3 +87,4 @@ print(subset5)
 # SHORTCUT wiyh this ~ operator (NOT)
 subset6 = pokemon_df[ ~pokemon_df['Legendary'] ]
 print(subset6)
+
